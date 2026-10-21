@@ -3,8 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WakeCall — WakeCall</title>
-<meta name="description" content="WakeCall — a real person calls you awake. Terms, privacy policy, community guidelines and support.">
+<title>WakeCall — 真人電話叫醒鬧鐘</title>
+<meta name="description" content="設定早起時間，真人打電話叫你起床。不必接聽，醒了長按報到就好；沒人打來，備用鬧鐘照響。WakeCall 限 18 歲以上，通話絕不錄音。">
+<link rel="canonical" href="https://wakecall-app.github.io/">
+<meta name="apple-itunes-app" content="app-id=6811282400">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WakeCall">
+<meta property="og:url" content="https://wakecall-app.github.io/">
+<meta property="og:title" content="WakeCall — 真人電話叫醒鬧鐘">
+<meta property="og:description" content="明天早上，可能有真人打電話叫你起床。不必接聽，醒了長按報到；沒人打來，備用鬧鐘照響。">
+<meta property="og:image" content="https://wakecall-app.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WakeCall — 真人電話叫醒鬧鐘">
+<meta name="twitter:description" content="明天早上，可能有真人打電話叫你起床。不必接聽，醒了長按報到；沒人打來，備用鬧鐘照響。">
+<meta name="twitter:image" content="https://wakecall-app.github.io/og.png">
 <style>
 :root { color-scheme: dark; }
 * { box-sizing: border-box; }
@@ -42,6 +58,13 @@ th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid rgba(255,
 th { color: #fff; font-weight: 600; }
 footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.1);
          color: #8a9099; font-size: 13px; }
+.cta { display:inline-block; margin:6px 0 22px; padding:13px 26px; border-radius:999px;
+  background:linear-gradient(135deg,#feb484,#f68167); color:#1a1020; font-weight:700;
+  text-decoration:none; font-size:16px; }
+.cta:hover { filter:brightness(1.07); }
+.points { list-style:none; padding:0; margin:0 0 26px; }
+.points li { padding:9px 0 9px 26px; position:relative; border-bottom:1px solid rgba(255,255,255,.07); }
+.points li::before { content:'—'; position:absolute; left:0; color:#feb484; }
 .callout { background: rgba(254,180,132,.08); border: 1px solid rgba(254,180,132,.25);
            border-radius: 12px; padding: 14px 16px; margin: 20px 0; }
 .callout p { margin: 0; color: #f2e2d5; }
@@ -60,13 +83,22 @@ footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255
       </nav>
     </header>
     
-    <h1>WakeCall</h1>
-    <p class="meta">A real person calls you awake. 真人打電話叫你起床。</p>
-    <p>WakeCall connects people so one can wake the other with a voice call. At the time
-    you choose, your wake-up opens to everyone eligible, and whoever gets through first is
-    the one who wakes you. A backup alarm on your own device always rings if nobody does.</p>
-    <p>WakeCall 讓真人打電話叫你起床。時間一到，你的時段會對所有符合條件的人開放，誰先接通誰就負責叫醒你。
-    沒有人打來時，你手機上的備用鬧鐘一定會響。</p>
+    <h1>明早，可能有人打電話叫你起床</h1>
+    <p class="meta">A real person calls you awake. 真人電話叫醒鬧鐘。</p>
+
+    <a class="cta" href="https://apps.apple.com/app/id6811282400">在 App Store 下載 / Download on the App Store</a>
+
+    <ul class="points">
+      <li><strong>真人打來，不是鈴聲。</strong>時間一到，你的時段同時對所有符合條件的人開放，誰先接通誰就叫醒你。沒有人「預約」你的早晨，所以沒有人能放你鴿子。</li>
+      <li><strong>不必接聽，也不必聊天。</strong>真正結束一次叫醒的，是你醒來打開 App 長按三秒報到。報到之後這個時段就不會再有人打來。</li>
+      <li><strong>沒人打來，備用鬧鐘照響。</strong>WakeCall 一定會在你自己的裝置上設一個備用鬧鐘。在 iOS 26 以上它是真正的系統鬧鐘，靜音與專注模式都擋不住它。</li>
+      <li><strong>你決定誰可以叫你。</strong>選擇接受哪些國家、哪些性別接下你的時段。不符合的人看不到你的時段存在。</li>
+    </ul>
+
+    <p>Set the time you want to be woken. At that moment your slot opens to everyone eligible,
+    and whoever gets through first is the one who wakes you. You don't have to answer — what
+    ends a wake-up is holding to check in once you're up. If nobody calls, the backup alarm on
+    your own device still rings.</p>
     <h2>Legal &amp; support / 法律與支援</h2>
     <ul>
       <li><a href="terms.html">Terms of Use / 使用條款</a></li>
@@ -79,7 +111,7 @@ footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255
 
     <footer>
       WakeCall · <a href="mailto:wakecall888@gmail.com">wakecall888@gmail.com</a><br>
-      Last updated 2026-09-12 · 最後更新 2026-09-12
+      Last updated 2026-10-21 · 最後更新 2026-10-21
     </footer>
   </div>
 </body>
